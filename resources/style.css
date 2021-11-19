@@ -46,3 +46,46 @@ header nav a{
 header nav li{
     padding-left: 16px;
 }
+
+main .banner_container{
+    background-color: gray;
+    position: relative;
+    display: flex;
+   
+}
+
+main .banner_container .banner{
+    margin: 32px 24px;
+    width: 55%;
+    height: auto;
+}
+
+main .banner_container .text{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 250px;
+    width: 450px;
+    margin: auto 0;
+    position: relative;
+    left: 24px;
+}
+
+main .text h1{
+    font-size: 60px;
+}
+
+main .text p{
+    font-size: 33px;
+    
+}
+main .text a{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 400px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 28px;
+}
