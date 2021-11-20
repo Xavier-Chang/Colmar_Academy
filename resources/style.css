@@ -56,7 +56,7 @@ main .banner_container{
 
 main .banner_container .banner{
     margin: 32px 24px;
-    width: 55%;
+    width: 805px;
     height: auto;
 }
 
@@ -88,4 +88,44 @@ main .text a{
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 28px;
+}
+
+.info_container{
+    background-color: white;
+    position: relative;
+    display: flex;
+}
+
+.info_container .left_container{
+    display: block;
+}
+
+.info_container .left_container .info_img{
+    width: 805px;
+    margin: 32px 24px;
+}
+
+.info_container .left_container .text{
+    inline-size: 790px;
+    overflow-wrap: break-word;
+    margin-left: 24px;
+
+}
+
+.info_container .left_container h2{
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.info_container .left_container p{
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+
+.info_container .left_container .emanuel{
+    font-size: 20px;
+    margin-top: 0px;
+
 }
