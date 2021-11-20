@@ -94,13 +94,17 @@ main .text a{
     background-color: white;
     position: relative;
     display: flex;
+    width: auto;
 }
 
 .info_container .left_container{
     display: block;
+    border-right: 1px solid gray;
+    width: 60%;
 }
 
 .info_container .left_container .info_img{
+    display: flex;
     width: 805px;
     margin: 32px 24px;
 }
@@ -127,5 +131,25 @@ main .text a{
 .info_container .left_container .emanuel{
     font-size: 20px;
     margin-top: 0px;
+    margin-bottom: 32px;
+}
 
+.info_container .right_container{
+    display: inline-block;
+    width: 40%;
+}
+
+.info_container .right_container .info_box{
+    width: 569px;
+    height: 180px;
+    display: flex;
+    margin-top: 32px;
+}
+
+.info_container .right_container .info_box img{
+    width: 188px;
+    height: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
 }
