@@ -51,7 +51,6 @@ main .banner_container{
     background-color: gray;
     position: relative;
     display: flex;
-   
 }
 
 main .banner_container .banner{
@@ -139,17 +138,49 @@ main .text a{
     width: 40%;
 }
 
-.info_container .right_container .info_box{
+.right_container .info_box{
     width: 569px;
-    height: 180px;
-    display: flex;
-    margin-top: 32px;
+    height: 220px;
+    display: flex;   
+    border-bottom: 1px solid gray;
 }
 
-.info_container .right_container .info_box img{
-    width: 188px;
+#first_box{
+    padding-top: 32px;
+}
+
+#second_box{
+    padding-top: 16px;
+}
+
+#third_box{
+    padding-top: 16px;
+    background-color: gray;
+}
+
+.right_container .info_box img{
+    width: 200px;
     height: auto;
     margin-left: 16px;
-    margin-right: 16px;
+    margin-right: 32px;
     margin-bottom: 16px;
+}
+
+.right_container .info_box .text_container h3{
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.right_container .info_box .text_container p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+}
+
+.right_container .info_box .text_container a{
+    font-size: 20px;
+    color: skyblue;
+    text-decoration: none;
+    
 }
