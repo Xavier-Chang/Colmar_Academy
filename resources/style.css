@@ -112,7 +112,7 @@ main .text a{
     inline-size: 790px;
     overflow-wrap: break-word;
     margin-left: 24px;
-
+    padding-bottom: 32px;
 }
 
 .info_container .left_container h2{
@@ -181,6 +181,55 @@ main .text a{
 .right_container .info_box .text_container a{
     font-size: 20px;
     color: skyblue;
-    text-decoration: none;
+    text-decoration: none;   
+}
+
+main .start_learning{
+    background-color: gray;
+    position: relative;
+    padding: 16px 72px;
+    padding-bottom: 64px;
+}
+
+main .start_learning h2{
+    text-align: center;
+    margin: 32px auto;
+    font-size: 50px;
+}
+
+main .start_learning .container{
+    position: relative;
+    margin: 0 auto;
+    display: inline-flex;
     
+}
+
+main .start_learning .container .box{
+    display: block;
+    min-height: 407px;
+    width: 390px;
+    margin: 16px;
+    padding-bottom: 24px;
+    background-color: white;
+}
+
+main .start_learning .container .box img{
+    width: 390px;
+    height: auto;
+}
+
+main .start_learning .container .box h3{
+    font-size: 30px;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-bottom: 8px;
+}
+
+main .start_learning .container .box p{
+    font-size: 22px;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 8px;
+    line-height: 28px;
 }
