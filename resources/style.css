@@ -1,5 +1,7 @@
-body{
-    
+@media only screen and (min-width: 480.5px){
+    .mobile{
+        display: none;
+    }
 }
 
 h1{
@@ -47,21 +49,24 @@ header nav li{
     padding-left: 16px;
 }
 
-main .banner_container{
+.desktop main .banner_container{
     background-color: gray;
     position: relative;
     display: flex;
     width: auto;
 }
 
-main .banner_container .banner{
+.desktop main .banner_container .banner{
     margin: 32px 24px;
-    width: 805px;
+    max-width: 805px;
+    min-width: 100px;
     height: auto;
 }
 
-main .banner_container .text{
+.desktop main .banner_container .text{
     display: inline-flex;
+    max-width: 469px;
+    min-width: 100px;
     flex-direction: column;
     justify-content: center;
     align-content: center; 
@@ -72,15 +77,15 @@ main .banner_container .text{
     left: 24px;
 }
 
-main .text h1{
+.desktop main .text h1{
     font-size: 60px;
 }
 
-main .text p{
+.desktop main .text p{
     font-size: 33px;
     
 }
-main .text a{
+.desktop main .text a{
     background-color: black;
     color: white;
     text-align: center;
@@ -94,7 +99,7 @@ main .text a{
 .info_container{
     background-color: white;
     position: relative;
-    display: inline-flex;
+    display: flex;
     width: auto;
 }
 
@@ -106,7 +111,8 @@ main .text a{
 
 .info_container .left_container .info_img{
     display: flex;
-    width: 805px;
+    max-width: 805px;
+    min-width: 100px;
     margin: 32px 24px;
 }
 
@@ -148,7 +154,7 @@ main .text a{
     border-bottom: 1px solid gray;
 }
 
-.info_container .right_container .info_box #first_box{
+.info_container .right_container #first_box{
     padding-top: 32px;
 }
 
@@ -198,26 +204,32 @@ main .start_learning h2{
     text-align: center;
     margin: 32px auto;
     font-size: 50px;
+    max-width: 414px;
+    min-width: 100px;
 }
 
 main .start_learning .container{
     position: relative;
     margin: 0 auto;
     display: inline-flex;
+    max-width: 422px;
+    min-width: 100px;
     
 }
 
 main .start_learning .container .box{
     display: block;
     min-height: 407px;
-    width: 390px;
+    max-width: 390px;
+    min-width: 100px;
     margin: 16px;
     padding-bottom: 24px;
     background-color: white;
 }
 
 main .start_learning .container .box img{
-    width: 390px;
+    max-width: 390px;
+    min-width: 100px;
     height: auto;
 }
 
@@ -350,4 +362,69 @@ footer .container .links a{
     color: black;
     text-decoration: none;
     margin-left: 16px;
+}
+
+@media only screen and (max-width: 481px){
+    .desktop{
+        display: none;
+    }
+
+    header .mobile{
+        padding: 0px 24px; 
+        height: 64px;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+ 
+    main .mobile .banner_container{
+        background-color: gray;
+        position: relative;
+        width: 480px;
+        padding-bottom: 32px;
+        display: block;
+    }
+    
+    main .mobile .banner_container img{
+        margin: 0px;
+        max-width: 480px;
+        min-width: 100px;
+        height: auto;
+    }
+    
+    main .mobile .banner_container .text{
+        width: auto;
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        padding-left: 16px;
+    }
+    
+    main .mobile .banner_container .text h1{
+        font-size: 50px;
+        margin-top: 32px;
+        margin-right: 40px;
+    }
+    
+    main .mobile .banner_container .text p{
+        font-size: 32px;
+        margin-top: 32px;
+        margin-bottom: 24px;
+        
+    }
+    main .mobile .banner_container .text a{
+        background-color: black;
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;  
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 32px;
+        font-size: 32px;
+        max-width: 430px;
+        min-width: 100px;
+    }
 }
