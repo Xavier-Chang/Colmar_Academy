@@ -4,6 +4,7 @@
     }
 }
 
+/*desktop part*/
 h1{
     margin: auto;
 }
@@ -49,21 +50,21 @@ header nav li{
     padding-left: 16px;
 }
 
-.desktop main .banner_container{
+.desktop .banner_container{
     background-color: gray;
     position: relative;
     display: flex;
     width: auto;
 }
 
-.desktop main .banner_container .banner{
+.desktop .banner_container .banner{
     margin: 32px 24px;
     max-width: 805px;
     min-width: 100px;
     height: auto;
 }
 
-.desktop main .banner_container .text{
+.desktop .banner_container .text{
     display: inline-flex;
     max-width: 469px;
     min-width: 100px;
@@ -77,15 +78,15 @@ header nav li{
     left: 24px;
 }
 
-.desktop main .text h1{
+.desktop .text h1{
     font-size: 60px;
 }
 
-.desktop main .text p{
+.desktop .text p{
     font-size: 33px;
     
 }
-.desktop main .text a{
+.desktop .text a{
     background-color: black;
     color: white;
     text-align: center;
@@ -96,7 +97,7 @@ header nav li{
     font-size: 28px;
 }
 
-.info_container{
+.desktop .info_container{
     background-color: white;
     position: relative;
     display: flex;
@@ -154,15 +155,15 @@ header nav li{
     border-bottom: 1px solid gray;
 }
 
-.info_container .right_container #first_box{
+.desktop .info_container .right_container #first_box{
     padding-top: 32px;
 }
 
-#second_box{
+.desktop .info_container .right_container #second_box{
     padding-top: 16px;
 }
 
-#third_box{
+.desktop .info_container .right_container #third_box{
     padding-top: 16px;
     background-color: gray;
 }
@@ -193,14 +194,14 @@ header nav li{
     text-decoration: none;   
 }
 
-main .start_learning{
+.desktop .start_learning{
     background-color: gray;
     position: relative;
     padding: 16px 72px;
     padding-bottom: 64px;
 }
 
-main .start_learning h2{
+.desktop .start_learning h2{
     text-align: center;
     margin: 32px auto;
     font-size: 50px;
@@ -208,7 +209,7 @@ main .start_learning h2{
     min-width: 100px;
 }
 
-main .start_learning .container{
+.desktop .start_learning .container{
     position: relative;
     margin: 0 auto;
     display: inline-flex;
@@ -217,7 +218,7 @@ main .start_learning .container{
     
 }
 
-main .start_learning .container .box{
+.desktop .start_learning .container .box{
     display: block;
     min-height: 407px;
     max-width: 390px;
@@ -227,20 +228,20 @@ main .start_learning .container .box{
     background-color: white;
 }
 
-main .start_learning .container .box img{
+.desktop .start_learning .container .box img{
     max-width: 390px;
     min-width: 100px;
     height: auto;
 }
 
-main .start_learning .container .box h3{
+.desktop .start_learning .container .box h3{
     font-size: 30px;
     margin-top: 16px;
     margin-left: 32px;
     margin-bottom: 8px;
 }
 
-main .start_learning .container .box p{
+.desktop .start_learning .container .box p{
     font-size: 22px;
     margin-top: 16px;
     margin-left: 32px;
@@ -249,27 +250,27 @@ main .start_learning .container .box p{
     line-height: 28px;
 }
 
-main .thesis{
+.desktop .thesis{
     position: relative;
     padding-left: 24px;
     padding-bottom: 32px;
     border-bottom: 1px solid gray ;
 }
 
-main .thesis h2{
+.desktop .thesis h2{
     text-align: center;
     margin: 32px auto;
     font-size: 50px;
 }
 
-.thesis .container{
+.desktop .thesis .container{
     position: relative;
     margin: 0 auto;
     display: inline-flex;
  
 }
 
-.thesis .container .left_container{
+.desktop .thesis .container .left_container{
     display: block;
     width: 60%;
     margin-top: 0px;
@@ -277,26 +278,26 @@ main .thesis h2{
     margin-bottom: 32px;
 }
 
-.thesis .container .left_container video{
+.desktop .thesis .container .left_container video{
     display: flex;
     width: 805px;
     margin-top: 0px;
     margin-left: 0px;
 }
 
-.thesis .container .left_container .text{
+.desktop .thesis .container .left_container .text{
     inline-size: 790px;
     overflow-wrap: break-word;
     margin-top: 24px;
     margin-left: 0px;
 }
 
-.thesis .container .left_container .text h3{
+.desktop .thesis .container .left_container .text h3{
     font-size: 30px;
     margin-bottom: 16px;
 }
 
-.thesis .container .left_container .text p{
+.desktop .thesis .container .left_container .text p{
     font-size: 22px;
     margin-right: 30px;
     margin-top: 16px;
@@ -364,6 +365,8 @@ footer .container .links a{
     margin-left: 16px;
 }
 
+/*mobile part*/
+
 @media only screen and (max-width: 481px){
     .desktop{
         display: none;
@@ -426,5 +429,112 @@ footer .container .links a{
         font-size: 32px;
         max-width: 430px;
         min-width: 100px;
+    }
+
+    .mobile .info_container{
+        position: relative;
+        width: 480px;
+        border-bottom: 1px solid gray;
+    }
+
+    .mobile .info_container #box{
+        width: auto;
+        margin-bottom: 48px;
+    }
+
+    .mobile .info_container #third_box{
+        width: auto;
+        margin-bottom: 32px;
+    }
+
+    .mobile .info_container .info_box img{
+        max-width: 440px;
+        margin: 16px;
+        position: relative;
+    }
+
+    .mobile .info_container .info_box .text_container{
+        margin-top: 0px;
+        padding-left: 16px;
+    }
+
+    .mobile .info_container .info_box .text_container h3{
+        font-size: 30px;
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    
+    .mobile .info_container .info_box .text_container p{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+    }
+    
+    .mobile .info_container .info_box .text_container a{
+        font-size: 20px;
+        color: skyblue;
+        text-decoration: none;   
+    }
+
+    .mobile .start_learning{
+        position: relative;
+        width: 448px;
+        padding: 16px 16px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid gray;
+    }
+
+    .mobile .start_learning h2{
+        text-align: center;
+        margin: 16px auto;
+        margin-bottom: 32px;
+        font-size: 50px;
+    }
+
+    .mobile .start_learning .container{
+        background-color: grey;
+        width: auto;
+        padding: 24px;
+        margin-bottom: 8px;
+    }
+
+    .mobile .start_learning .container a{
+        color: black;
+        text-decoration: none; 
+    }
+
+    .mobile .start_learning .container h3{
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    .mobile .thesis{
+        position: relative;
+        width: 480px;
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
+
+    .mobile .thesis h2{
+        text-align: center;
+        margin: 16px auto;
+        margin-bottom: 32px;
+        font-size: 50px;
+    }
+
+    .mobile .thesis video{
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    footer .mobile{
+        position: relative;
+        width: 480px;
+        padding: 16px;
+    }
+
+    footer .mobile p{
+        font-size: 16px;
     }
 }
